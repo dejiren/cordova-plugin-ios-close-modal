@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-ios-close-modal",
+  "version": "1.0.0",
+  "description": "Cordova Native ios close modal",
+  "main": "index.js",
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "cordova"
+  ],
+  "author": "dejiren team"
+}

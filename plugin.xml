@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-ios-close-modal" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>CloseModal</name>
+    <description>Cordova Dejiren ios close modal</description>
+    <keywords>cordova,utils,close,modal</keywords>
+    
+    <js-module name="CloseModal" src="www/CloseModal.js">
+        <clobbers target="cordova.plugins.CloseModal" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CloseModal">
+                <param name="ios-package" value="CloseModal" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CloseModal.m" />
+        <source-file src="src/ios/CloseModal.h" />
+    </platform>
+</plugin>
